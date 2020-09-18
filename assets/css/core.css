@@ -695,7 +695,6 @@ textarea.form-control {
 .pagination-split li {
   margin-left: 5px;
   display: inline-block;
-  float: left;
 }
 .pagination-split li:first-child {
   margin-left: 0;

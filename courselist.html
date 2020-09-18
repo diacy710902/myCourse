@@ -13,7 +13,6 @@
 		<!--Footable-->
 		<link href="assets/plugins/footable/css/footable.core.css" rel="stylesheet">
         <link href="assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
-        <link href="assets/plugins/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet" type="text/css" />
 
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -198,12 +197,11 @@
 									<table id="demo-foo-filtering" class="table table-striped toggle-circle m-b-0" data-page-size="10">
 										<thead>
 											<tr>
-												<th data-hide="phone" class="min-width">課程編號</th>
-												<th data-toggle="true">課程類別</th>
-                                                <th data-hide="phone">課程名稱</th>
-                                                <th data-hide="phone">課程年度</th>
+												<th data-hide="phone">課程類別</th>
+                                                <th data-toggle="true" data-hide="phone">課程名稱</th>
+                                                <th data-hide="phone">期次</th>
+                                                <th data-hide="phone">期別</th>
 												<th data-hide="phone, tablet">學分</th>
-                                                <th data-hide="phone, tablet">課程狀態</th>
                                                 <th data-hide="phone, tablet">選項</th>
 											</tr>
                                         </thead>
@@ -240,48 +238,55 @@
 										</div>
 										<tbody>
 											<tr>
-												<td>16386541</td>
 												<td>必修</td>
 												<td>程式設計(一)</td>
-                                                <td>107-1</td>
+                                                <td>學期</td>
+                                                <td>上學期</td>
                                                 <td>3</td>
-                                                <td>已修</td>
 												<td class="actions">
                                                     <a href="#"><span class="label label-table label-inverse"><i class="fa fa-pencil"></i></span></a>
                                                     <a href="#"><span class="label label-table label-danger"><i class="fa fa-trash-o"></i></span></a>
 	                                            </td>
 											</tr>
 											<tr>
-												<td>16386323</td>
-												<td>選修</td>
+												<td>必修</td>
 												<td>程式設計(二)</td>
-                                                <td>107-2</td>
+                                                <td>學年</td>
+                                                <td>下學期</td>
                                                 <td>3</td>
-                                                <td>抵免</td>
 												<td class="actions">
                                                     <a href="#"><span class="label label-table label-inverse"><i class="fa fa-pencil"></i></span></a>
                                                     <a href="#"><span class="label label-table label-danger"><i class="fa fa-trash-o"></i></span></a>
 	                                            </td>
 											</tr>
 											<tr>
-												<td>16386554</td>
 												<td>必修</td>
 												<td>資料結構</td>
-                                                <td>108-2</td>
+                                                <td>學期</td>
+                                                <td>下學期</td>
                                                 <td>3</td>
-                                                <td>未修</td>
 												<td class="actions">
                                                     <a href="#"><span class="label label-table label-inverse"><i class="fa fa-pencil"></i></span></a>
                                                     <a href="#"><span class="label label-table label-danger"><i class="fa fa-trash-o"></i></span></a>
 	                                            </td>
                                             </tr>
                                             <tr>
-												<td>16386001</td>
 												<td>選修</td>
-												<td>色彩學</td>
-                                                <td>107-1</td>
-                                                <td>3</td>
-                                                <td>必修</td>
+												<td>計算機概論</td>
+                                                <td>學年</td>
+                                                <td>上學期</td>
+                                                <td>2</td>
+												<td class="actions">
+                                                    <a href="#"><span class="label label-table label-inverse"><i class="fa fa-pencil"></i></span></a>
+                                                    <a href="#"><span class="label label-table label-danger"><i class="fa fa-trash-o"></i></span></a>
+	                                            </td>
+                                            </tr>
+                                            <tr>
+												<td>選修</td>
+												<td>C語言</td>
+                                                <td>學期</td>
+                                                <td>下學期</td>
+                                                <td>2</td>
 												<td class="actions">
                                                     <a href="#"><span class="label label-table label-inverse"><i class="fa fa-pencil"></i></span></a>
                                                     <a href="#"><span class="label label-table label-danger"><i class="fa fa-trash-o"></i></span></a>
@@ -356,8 +361,6 @@
         <!-- jQuery -->
         <script src="assets/js/jquery.core.js"></script>
         <script src="assets/js/jquery.app.js"></script>
-
-        <script src="assets/plugins/bootstrap-table/dist/bootstrap-table.min.js"></script>
 
         <!--FooTable-->
 		<script src="assets/plugins/footable/js/footable.all.min.js"></script>
